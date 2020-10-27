@@ -1,0 +1,15 @@
+#flex-container {
+
+	display: flex;
+ 	flex-flow: row; nowrap;
+ 	align-content: center;
+
+}
+
+li {
+	width: 100%;
+}
+
+li:nth-child(1){
+	
+}
