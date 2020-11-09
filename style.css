@@ -50,31 +50,32 @@ nav ul {
 nav ul li {
     display: inline;
 }
-
-#top{
+#top_area{
+    grid-column: 1/5;
     height: 40vh;
     background-color: #4983FD;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+}
+#top{
+    
     color: white;
     grid-column: 2 / 4;
-    padding: 32px;
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
     text-align: center;
     
     
-    
-    
 }
-#h2_1{
+#top_right{
+    padding-top: 110px;
 }
-#h2_2{
+#top_left{
+    padding-top: 60px;
+}
 
-    
-}
-#h2_3{
-    
-}
 
 
 
@@ -88,12 +89,18 @@ nav ul li {
     border-color: white;
     
 }
+#why_area{
+    grid-column: 1/5;
+    height: 80vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+    
+}
 
 #why_choose{
-    background-color: white;
-    text-align: center;
     grid-column: 2/4;
-    height: 40vh;
+    text-align: center;
     display: grid;
      grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
@@ -109,11 +116,19 @@ nav ul li {
     grid-column: span 1;
 }
 
-#process{
+#process_area{
+    grid-column: 1/5;
+    height: 40vh;
     background-color: #4983FD;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+    height: 40vh;
+}
+
+#process{
     text-align: center;
     grid-column: 2/4;
-    height: 40vh;
+    
     display: grid;
      grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
@@ -131,12 +146,17 @@ nav ul li {
     grid-column: span 1;
     
 }
+#services_area{
+    grid-column: 1/5;
+    height: 30vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+}
 
 #services{
-     background-color: white;
     text-align: center;
     grid-column: 2/4;
-    height: 20vh;
     display: grid;
      grid-template-columns: 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
@@ -148,19 +168,43 @@ nav ul li {
     text-decoration: none;
     background-color: #4983FD;
     padding: 5px 40px;
-    color: black;
+    color: white;
     border: 3px solid #353f46;
     border-color: white;
     
 }
 
+#footer_area{
+    grid-column: 1/5;
+    height: 5vh;
+    background-color: #4983FD;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+}
+#footer_area2{
+    grid-column: 1/5;
+    height: 5vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+}
+footer{
+    grid-column: 2/4;
+    padding-top: 20px;
+    
+}
 /*--------------------------------------------------------------------------Contact---------------------------------------------------------------------*/
 
-
+#contact_area{
+    grid-column: 1/5;
+    height: 50vh;
+    background-color: #4983FD;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+    
+}
 #top_contact{
     
-    height: 40vh;
-    background-color: #4983FD;
     color: white;
     grid-column: 2 / 4;
     padding: 32px;
