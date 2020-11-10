@@ -249,14 +249,75 @@ input{
 
 
 
+/*--------------------------------------------------------------------------about---------------------------------------------------------------------*/
+
+
+#top_area_about{
+    grid-column: 1/5;
+    height: 50vh;
+    background-color: #4983FD;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+}
+#top_about{
+    
+    color: white;
+    grid-column: 2 / 4;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    
+    
+}
+
+/*--------------------------------------------------------------------------blog---------------------------------------------------------------------*/
 
 
 
 
 
+#top_area_blog{
+    grid-column: 1/5;
+    height: 50vh;
+    background-color: #4983FD;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+}
+#top_blog{
+    
+    color: white;
+    grid-column: 2 / 4;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    
+    
+}
+
+/*--------------------------------------------------------------------------services---------------------------------------------------------------------*/
 
 
 
 
+#top_area_services{
+    grid-column: 1/5;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+}
+#top_services{
+    
+    color: black;
+    grid-column: 2 / 4;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    
+    
+}
 
 
