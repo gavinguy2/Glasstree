@@ -146,6 +146,28 @@ nav ul li {
     grid-column: span 1;
     
 }
+
+
+#footer_area{
+    grid-column: 1/5;
+    height: 5vh;
+    background-color: #4983FD;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+}
+#footer_area2{
+    grid-column: 1/5;
+    height: 5vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+}
+footer{
+    grid-column: 2/4;
+    padding-top: 20px;
+    
+}
+
 #services_area{
     grid-column: 1/5;
     height: 30vh;
@@ -171,26 +193,6 @@ nav ul li {
     color: white;
     border: 3px solid #353f46;
     border-color: white;
-    
-}
-
-#footer_area{
-    grid-column: 1/5;
-    height: 5vh;
-    background-color: #4983FD;
-    display: grid;
-    grid-template-columns: 1fr 600px 600px 1fr;
-}
-#footer_area2{
-    grid-column: 1/5;
-    height: 5vh;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr 600px 600px 1fr;
-}
-footer{
-    grid-column: 2/4;
-    padding-top: 20px;
     
 }
 /*--------------------------------------------------------------------------Contact---------------------------------------------------------------------*/
@@ -306,7 +308,7 @@ input{
     height: 100vh;
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 600px 600px 1fr;
+    grid-template-columns:1fr 600px 600px 1fr;
 }
 #top_services{
     
@@ -317,6 +319,266 @@ input{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    
+    #wrapper{
+    grid-template-columns: 1fr 250px 1fr;
+}
+    
+    #nav_area {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    background-color: white;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    grid-column: 1;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: none;
+    padding: 3px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+#logo {
+    align-self: center;
+    font-size: 30px;
+}
+/*--------------------------------------------------------------------------contact-mobile---------------------------------------------------------------------*/
+
+    
+    #contact_area{
+        padding-right: 30px;
+    grid-column: 1/4;
+    height: 75vh;
+    background-color: #4983FD;
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    
+}
+    
+#top_contact{
+    
+    color: white;
+    grid-column: 2;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+    
+}
+#top_contact h1{
+    grid-column: span 1;
+}
+#contact_right{
+    padding-left: 1px;
+}
+
+#contact_left{
+    padding-left: 1px;
+}
+#contact_right input{
+    padding-right: 5px;
+    background-color: white;
+    border-color: transparent;
+}
+
+#contact_right div a {
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 30px;
+    color: black;
+    border: 3px solid #353f46;
+    border-color: white;
+    
+}
+#submit{
+    padding-top: 25px;
+}
+
+input{
+    font-size: 20px;
+}
+    
+/*--------------------------------------------------------------------------blog-mobile---------------------------------------------------------------------*/
+#top_area_blog{
+    grid-column: 1/4;
+    height: 50vh;
+     padding-left: 20px;
+    grid-template-columns: 1fr 200px 1fr;
+}
+#top_blog{
+   
+    
+    color: white;
+    grid-column: 2;
+    
+    grid-template-columns: 1fr ;
+    
+    
+}
+/*--------------------------------------------------------------------------services-mobile---------------------------------------------------------------------*/
+#top_area_services{
+    padding-left: 20px;
+    grid-column: 1/4;
+    height: 300vh;
+    grid-template-columns:1fr 200px 1fr;
+}
+#top_services{
+    
+    grid-column: 2;
+    
+    grid-template-columns: 1fr;
+    
+    
+}
+    
+/*--------------------------------------------------------------------------about-mobile---------------------------------------------------------------------*/
+
+#top_area_about{
+    grid-column: 1/4;
+    padding-left: 10px;
+    height: 130vh;
+    grid-template-columns: 1fr 200px 1fr;
+}
+#top_about{
+    
+    grid-column: 2 ;
+    
+    grid-template-columns: 1fr;
+    
+    
+}
+    
+/*--------------------------------------------------------------------------home-mobile---------------------------------------------------------------------*/
+#top_area{
+    grid-column: 1/4;
+    height: 40vh;
+    grid-template-columns: 1fr 200px 1fr;
+    padding-right: 89px;
+}
+#top{
+    
+  
+    grid-column: 2;
+    
+    grid-template-columns: 1fr ;
+    
+    
+}
+#top_right{
+    padding-top: 0px;
+}
+#top_left{
+    padding-top: 6px;
+}
+
+#top div a {
+    padding: 5px 40px;
+    color: black;
+    border: 3px solid #353f46;
+    border-color: white;
+    
+}
+#why_area{
+    grid-column: 1/4;
+    height: 100vh;
+    grid-template-columns: 1fr 200px 1fr;
+    
+}
+
+#why_choose{
+    grid-column: 1/4;
+     grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+}
+
+#why_choose h1{
+    grid-column: span 1;
+    
+    
+}
+
+#why_choose h2{
+    grid-column: span 1;
+}
+
+#process_area{
+    grid-column: 1/4;
+    height: 40vh;
+    background-color: #4983FD;
+    grid-template-columns: 1fr 200px 1fr;
+}
+
+#process{
+    grid-column: 2;
+    display: grid;
+     grid-template-columns: 1fr  ;
+    grid-template-rows:auto;
+    
+}
+#process h1{
+    padding-left: 1px;
+    grid-column: span 1;
+    
+}
+    
+    
+/*--------------------------------------------------------------------------services-mobile---------------------------------------------------------------------*/
+
+#services_area{
+    grid-column: 1/4;
+    height: 30vh;
+    grid-template-columns: 1fr 200px 1fr;
+}
+
+#services{
+    grid-column: 2;
+     grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    
+
+}
+/*--------------------------------------------------------------------------footer-mobile---------------------------------------------------------------------*/
+
+#footer_area{
+    grid-column: 1/4;
+    height: 5vh;
+    grid-template-columns: 1fr 200px 1fr;
+}
+#footer_area2{
+    grid-column: 1/4;
+    height: 5vh;
+    grid-template-columns: 1fr 200px 1fr;
+}
+footer{
+    grid-column: 2;
+    padding-top: 23px;
+    
+}
+
+
+
+
     
 }
 
