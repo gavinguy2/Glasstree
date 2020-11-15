@@ -1206,6 +1206,10 @@ footer{
 
 @media only screen and (max-width: 450px) {
     
+    br {
+        display: none;
+    }
+    
     label #btn, label #cancel{
       
         padding-left: 90px;
@@ -1303,7 +1307,7 @@ footer{
 }
     
     #contact_area{
-    padding-left: 30px;
+    padding-left: px;
   
     
 }
