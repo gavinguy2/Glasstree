@@ -24,6 +24,7 @@ p{font-size: 20px;}
     grid-column: 1 / 5;
     grid-row: 1;
     z-index: 1;
+    
 }
 
 nav {
@@ -33,7 +34,8 @@ nav {
 }
 
 nav ul li {
-    padding: 3px;
+    
+    padding: 4px;
 }
 
 nav ul li a {
@@ -54,7 +56,8 @@ nav ul li a {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding-top: 10px;
+    
 }
 
 nav ul li {
@@ -407,6 +410,9 @@ input{
 
 }
 
+label #btn, label #cancel{
+    visibility: hidden;
+}
 
 
 /*--------------------------------------------------------------------------1400px---------------------------------------------------------------------*/
@@ -414,6 +420,11 @@ input{
 
 @media only screen and (max-width: 1400px) {
     
+
+    #check{
+        display: none;
+    }
+
     #wrapper{
     grid-template-columns: 1fr 1000px 1fr;
         
@@ -502,9 +513,14 @@ footer{
 
 
 @media only screen and (max-width: 1200px) {
+
+    #check{
+        display: none;
+    }
     
     #wrapper{
     grid-template-columns: 1fr 900px 1fr;
+    grid-template-rows: auto;   
         
 }
     
@@ -538,6 +554,7 @@ footer{
     
 #services_area{
     grid-template-columns: 1fr 900px 1fr;
+    height: 20vh;
     }
     
 #top_area_services{
@@ -569,12 +586,12 @@ footer{
 }
     
     #footer_area{
-        height: 6vh;
+        height: 4vh;
  
     grid-template-columns: 1fr 900px 1fr;
 }
 #footer_area2{
-     height: 6vh;
+     height: 4vh;
     grid-template-columns: 1fr 900px 1fr;
 }
 footer{
@@ -587,25 +604,90 @@ footer{
 
 
 
-
-/*--------------------------------------------------------------------------800px---------------------------------------------------------------------*/
-
+/*--------------------------------------------------------------------------1000px---------------------------------------------------------------------*/
 
 
 
-@media only screen and (max-width: 900px) {
 
+@media only screen and (max-width: 1000px) {
+
+
+    #check{
+        display: none;
+       
     
+    }
+    
+
+    label #btn, label #cancel{
+        padding-top: 5px;
+        font-size: 30px;
+        color: black;
+        float: right;
+        cursor: pointer;
+        visibility: visible;
+        padding-left: 450px;
+        
+        
+    }
+    
+    label #btn{
+        display: block;
+        padding-left: 450px;
+       
+        
+       
+       
+       
+        
+    }
+
+    label #cancel{
+        display: none;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        top: 55px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+    }
     
     #wrapper{
-    grid-template-columns: 1fr 250px 1fr;
+    grid-template-columns: 1fr 500px 1fr;
 }
     
     #nav_area {
     padding-top: 5px;
     padding-bottom: 5px;
     display: grid;
-    grid-template-columns: 1fr 250px 1fr;
+    grid-template-columns: 1fr 500px 1fr;
     background-color: white;
     grid-column: 1 / 4;
     grid-row: 1;
@@ -614,21 +696,9 @@ footer{
 
 
 nav {
-    display: flex;
     grid-column: 1;
-    justify-content: space-between;
 }
 
-nav ul li {
-    display: none;
-    padding: 3px;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-}
 
 h1{
     font-size: 25px;
@@ -651,7 +721,7 @@ h2{
     #contact_area{
     padding-right: 30px;
     grid-column: 1/4;
-    height: 60vh;
+    height: 75vh;
     background-color: #49B3FD;
     display: grid;
     grid-template-columns: 1fr 250px 1fr;
@@ -711,8 +781,8 @@ input{
 #top_area_blog{
     grid-column: 1/4;
     height: 80vh;
-     padding-left: 20px;
-    grid-template-columns: 1fr 250px 1fr;
+    text-align: center;
+    grid-template-columns: 1fr 500px 1fr;
 }
 #top_blog{
    
@@ -729,7 +799,10 @@ input{
 #top_blog p{
     padding-top: 40px;
 }
-
+    #top_area_blog h1{
+        font-size: 40px;
+    
+    }
 
 /*--------------------------------------------------------------------------services-mobile---------------------------------------------------------------------*/
 #top_area_services{
@@ -738,8 +811,8 @@ input{
     background-repeat: no-repeat;
     background-position: center;
     grid-column: 1/4;
-    height: 300vh;
-    grid-template-columns:1fr 250px 1fr;
+    height: 350vh;
+    grid-template-columns:1fr 350px 1fr;
 }
 #top_services{
     padding-left: 60px;
@@ -792,7 +865,7 @@ input{
     grid-column: 1/4;
     padding-left: 10px;
     padding-right: 0;
-    height: 80vh;
+    height: 110vh;
     grid-template-columns: 1fr 250px 1fr;
 }
 #top_about{
@@ -825,7 +898,7 @@ input{
     background-position: center;
     grid-column: 1/4;
     height: 80vh;
-    grid-template-columns: 1fr 250px 1fr;
+    grid-template-columns: 1fr 500px 1fr;
 }
 
 
@@ -914,7 +987,7 @@ input{
 #why_area{
     grid-column: 1/4;
     height: 140vh;
-    grid-template-columns: 1fr 250px 1fr;
+    grid-template-columns: 1fr 500px 1fr;
     
 }
 
@@ -939,7 +1012,8 @@ input{
     grid-column: 1/4;
     height: 80vh;
     background-color: #49B3FD;
-    grid-template-columns: 1fr 250px 1fr;
+    grid-template-columns: 1fr 500px 1fr;
+    text-align: center;
 }
 
 #process{
@@ -956,11 +1030,11 @@ input{
     
 }
 #services_area{
-    padding-right: 60px;
+    padding-right: 100px;
 
     grid-column: 1/4;
     height: 35vh;
-    grid-template-columns: 1fr 250px 1fr;
+    grid-template-columns: 1fr 500px 1fr;
     }
 
     
@@ -994,6 +1068,322 @@ footer{
 }
 
 
+@media only screen and (max-width: 600px) {
+   #footer_area{
+        height: 7vh;
+    }
+    
+    label #btn, label #cancel{
+      
+        padding-left: 60px;
+        
+        
+    }
+    
+     label #btn{
+        padding-left: 60px;
+        
+    }
+    #wrapper{
+        grid-template-columns: 1fr 300px 1fr; 
+    }
+    #top_area{
+    height: 90vh;
+    grid-template-columns: 1fr 300px 1fr;
+}
     
     
+
+    #why_area{
+    height: 170vh;
+    grid-template-columns: 1fr 300px 1fr;
+    
+}
+    #process_area{
+    padding-left: 15px;
+    height: 130vh;
+    text-align: unset;
+    grid-template-columns: 1fr 300px 1fr;
+}
+    
+    #services_area{
+        
+    padding-right: 30px;
+
+    height: 40vh;
+    grid-template-columns: 1fr 300px 1fr;
+    }
+    
+    #top_area_services{
+    height: 510vh;
+    grid-template-columns:1fr 300px 1fr;
+        
+    }
+    
+#top_area_about{
+    padding-left: 10px;
+    padding-right: 0;
+    height: 120vh;
+    grid-template-columns: 1fr 300px 1fr;
+}
+    
+    #top_area_blog h1 {
+        font-size: 35px;
+        
+        padding: unset;
+        padding-top: 10px;
+        padding-right: 15px; 
+        
+}
+    
+    #contact_area{
+    padding: unset;
+    padding-left: 30px;
+    grid-column: 1/4;
+    height: 100vh;
+    grid-template-columns: 1fr 300px 1fr;
+    
+}
+    
+    #top_area_blog{
+        padding-left:20px;
+         grid-template-columns: 1fr 300px 1fr;
+    }
+    
+      #top_area_blog #top_left p{
+         font-size: 23px;
+    }
+
+    
+    
+    
+}
+
+@media only screen and (max-width: 450px) {
+    
+    label #btn, label #cancel{
+      
+        padding-left: 90px;
+        
+        
+    }
+    
+     label #btn{
+        padding-left: 90px;
+        
+    }
+    #wrapper{
+        grid-template-columns: 1fr 300px 1fr; 
+    }
+    #top_area{
+    height: 90vh;
+    grid-template-columns: 1fr 300px 1fr;
+}
+    
+    
+
+    #why_area{
+    height: 170vh;
+    grid-template-columns: 1fr 300px 1fr;
+    
+}
+    #process_area{
+    height: 130vh;
+    grid-template-columns: 1fr 300px 1fr;
+}
+    
+    #services_area{
+    padding-right: 30px;
+
+    height: 40vh;
+    grid-template-columns: 1fr 300px 1fr;
+    }
+    
+    #top_area_services{
+    height: 560vh;
+    grid-template-columns:1fr 300px 1fr;
+        
+    }
+    
+#top_area_about{
+    padding-left: 10px;
+    padding-right: 0;
+    height: 140vh;
+    grid-template-columns: 1fr 300px 1fr;
+}
+    
+    #top_area_blog h1 {
+        font-size: 35px;
+        
+        padding: unset;
+        padding-top: 10px;
+        padding-right: 15px; 
+        
+}
+    
+    #contact_area{
+    padding: unset;
+    padding-left: 30px;
+    grid-column: 1/4;
+    height: 100vh;
+    grid-template-columns: 1fr 300px 1fr;
+    
+}
+    
+    #top_area_blog{
+         grid-template-columns: 1fr 300px 1fr;
+        text-align: unset;
+    }
+    
+   
+
+
+    
+    
+    
+}
+
+
+@media only screen and (max-width: 380px) {
+    
+    
+    #top_area{
+    height: 110vh;
+}
+    
+    
+
+    #why_area{
+    height: 190vh;
+    
+}
+    #process_area{
+    height: 150vh;
+}
+    
+    #services_area{
+
+    height: 40vh;
+    }
+    
+    #top_area_services{
+    height: 620vh;
+        
+    }
+    
+#top_area_about{
+   
+    height: 150vh;
+}
+    
+
+ }
+
+@media only screen and (max-width: 330px) {
+    
+        label #btn, label #cancel{
+      
+        padding-left: 20px;
+        
+        
+    }
+    
+     label #btn{
+        padding-left: 20px;
+    }
+    #wrapper{
+        grid-template-columns: 1fr 320px 1fr;
+    }
+    
+       #nav_area{
+        grid-template-columns: 1fr 320px 1fr;
+    }
+    
+    
+    #top_area{
+         grid-template-columns: 1fr 322px 1fr;
+    height: 120vh;
+}
+    
+    
+
+    #why_area{
+         grid-template-columns: 1fr 320px 1fr;
+    height: 220vh;
+    
+}
+    #process_area{
+         grid-template-columns: 1fr 320px 1fr;
+    height: 170vh;
+}
+    
+    #services_area{
+ grid-template-columns: 1fr 320px 1fr;
+    height: 40vh;
+    }
+    
+    #top_area_services{
+        grid-template-columns: 1fr 320px 1fr;
+        padding:unset;
+        height: 770vh;
+        
+    }
+    
+    #top_services{
+        padding-right: 50px;
+    }
+#top_area_about{
+    text-align: center;
+    padding: unset;
+    grid-template-columns: 1fr 320px 1fr;
+    height: 120vh;
+}
+    
+#top_area_about p{
+    font-size: 15px
+}
+    
+    
+    #nav_area{
+         grid-template-columns: 1fr 320px 1fr;
+    }
+    
+    #top_area_blog{
+        
+        padding: unset;
+        padding-left: 25px;
+         grid-template-columns: 1fr 300px 1fr;
+   
+    
+
+    }
+    
+    #contact_area{
+       
+         grid-template-columns: 1fr 300px 1fr;
+        height: 110vh;
+        
+    }
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
