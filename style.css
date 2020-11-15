@@ -1267,7 +1267,6 @@ footer{
 }
     
     #contact_area{
-    padding: unset;
     padding-left: 30px;
     grid-column: 1/4;
     height: 100vh;
@@ -1303,6 +1302,12 @@ footer{
     height: 110vh;
 }
     
+    #contact_area{
+    padding-left: 30px;
+  
+    
+}
+    
     
 
     #why_area{
@@ -1319,7 +1324,7 @@ footer{
     }
     
     #top_area_services{
-    height: 500vh;
+    height: 650vh;
         
     }
     
