@@ -27,6 +27,11 @@ p{font-size: 20px;}
     
 }
 
+
+    #check{
+        display: none;
+    }
+
 nav {
     display: flex;
     grid-column: 2 / 4;
@@ -415,11 +420,45 @@ label #btn, label #cancel{
 }
 
 
+/*--------------------------------------------------------------------------2000px---------------------------------------------------------------------*/
+
+@media only screen and (max-width: 2000px) {
+
+    #check{
+        display: none;
+    }
+
+
+#top_area{
+    height: 50vh;
+}
+
+#process_area{
+  height: 50vh;   
+}
+#top_area_services{
+    padding-left: 150px;
+  height: 200vh;   
+}
+
+#top_area_about{
+     height: 80vh;
+}
+
+}
+
+
 /*--------------------------------------------------------------------------1400px---------------------------------------------------------------------*/
 
 
 @media only screen and (max-width: 1400px) {
     
+
+
+    #top_area_services{
+    padding-left: unset;
+     
+}
 
     #check{
         display: none;
@@ -1068,6 +1107,9 @@ footer{
 }
 
 
+/*--------------------------------------------------------------------------600px---------------------------------------------------------------------*/
+
+
 @media only screen and (max-width: 600px) {
    #footer_area{
         height: 7vh;
@@ -1159,6 +1201,9 @@ footer{
     
 }
 
+/*--------------------------------------------------------------------------450px---------------------------------------------------------------------*/
+
+
 @media only screen and (max-width: 450px) {
     
     label #btn, label #cancel{
@@ -1234,8 +1279,14 @@ footer{
          grid-template-columns: 1fr 300px 1fr;
         text-align: unset;
     }
+
+
     
-   
+   #footer_area{
+    height: 7vh;
+}
+#footer_area2{
+    height: 7vh;
 
 
     
@@ -1243,6 +1294,7 @@ footer{
     
 }
 
+/*--------------------------------------------------------------------------380px---------------------------------------------------------------------*/
 
 @media only screen and (max-width: 380px) {
     
@@ -1267,7 +1319,7 @@ footer{
     }
     
     #top_area_services{
-    height: 620vh;
+    height: 500vh;
         
     }
     
@@ -1278,6 +1330,10 @@ footer{
     
 
  }
+
+
+ /*--------------------------------------------------------------------------330px---------------------------------------------------------------------*/
+
 
 @media only screen and (max-width: 330px) {
     
@@ -1292,11 +1348,11 @@ footer{
         padding-left: 20px;
     }
     #wrapper{
-        grid-template-columns: 1fr 320px 1fr;
+        grid-template-columns: 1fr 330px 1fr;
     }
     
        #nav_area{
-        grid-template-columns: 1fr 320px 1fr;
+        grid-template-columns: 1fr 330px 1fr;
     }
     
     
@@ -1345,7 +1401,7 @@ footer{
     
     
     #nav_area{
-         grid-template-columns: 1fr 320px 1fr;
+         grid-template-columns: 1fr 330px 1fr;
     }
     
     #top_area_blog{
@@ -1360,7 +1416,7 @@ footer{
     
     #contact_area{
        
-         grid-template-columns: 1fr 300px 1fr;
+         grid-template-columns: 1fr 320px 1fr;
         height: 110vh;
         
     }
