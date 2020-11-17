@@ -1,10 +1,17 @@
 /*--------------------------------------------------------------------------Home---------------------------------------------------------------------*/
 
+@font-face {
+    font-family: Source Sans Pro;
+    src: url('SourceSansPro-Regular.otf');
+}
+
 *{
     padding: 0;
     margin: 0;
-    font-family: Proxima Nova;
+    font-family: Source Sans Pro;
 }
+
+
 
 p{font-size: 20px;}
 
@@ -66,9 +73,15 @@ nav ul {
 }
 
 nav ul li {
+    font-size: ;
+    font-weight: bold;
     display: inline;
 }
 #top_area{
+    background-image: url("img/tree1\ copy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     grid-column: 1/5;
     height: 40vh;
     background-color: #49B3FD;
@@ -165,18 +178,23 @@ nav ul li {
 }
 
 #process p{
-    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+    
 }
+
+
 #process h1{
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
-#process_left{
-    
-}
+
+
+
 #process_right{
-    padding-top: 80px;
+    padding-top: 100px;
     
 }
 
@@ -205,6 +223,10 @@ footer{
 }
 
 #services_area{
+    background-image: url("img/tree2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     grid-column: 1/5;
     height: 30vh;
     background-color: white;
@@ -306,17 +328,28 @@ input{
     
 }
 #top_about h2{
+    color: black;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 #top_about h1{
+    color: black;
     padding-bottom: 20px;
 }
 
+#top_about p{
+    color: black;
+    padding-bottom: 10px;
+}
+
+
 
 #top_area_about{
+    background-image: url("img/typing.jpg");
+    background-size: cover;
+    background-position: bottom;
     grid-column: 1/5;
-    height: 50vh;
+    height: 100vh;
     background-color: #49B3FD;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
@@ -328,7 +361,7 @@ input{
 
 #top_about .border p{
    
-    border: 3px solid white;
+    border: 3px solid black;
     padding: 5px;
 }
 #top_left .border {
@@ -366,8 +399,12 @@ input{
 
 
 #top_area_services{
+    background-image: url("img/tree2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     grid-column: 1/5;
-    height: 140vh;
+    height: 240vh;
     background-color: white;
     display: grid;
     grid-template-columns:1fr 600px 600px 1fr;
@@ -437,15 +474,17 @@ label #btn, label #cancel{
   height: 50vh;   
 }
 #top_area_services{
-    padding-left: 150px;
-  height: 200vh;   
+padding-left: 150px;
+height: 240vh;   
 }
 
 #top_area_about{
-     height: 80vh;
+     height: 100vh;
+}
+#services_area{
+    height: 40vh;
 }
 
-}
 
 
 /*--------------------------------------------------------------------------1400px---------------------------------------------------------------------*/
@@ -480,7 +519,7 @@ label #btn, label #cancel{
     }
         
     #top_area{
-    
+    height: 60vh;
     grid-template-columns: 1fr 1000px 1fr;
         }
 
@@ -498,6 +537,7 @@ label #btn, label #cancel{
 }
     
 #services_area{
+    height: 40vh;
     grid-template-columns: 1fr 1000px 1fr;
     }
     
@@ -505,7 +545,7 @@ label #btn, label #cancel{
     
     grid-template-columns:1fr 1000px 1fr;
     padding-right: 50px;
-    height: 160vh;
+    height: 240vh;
     
 
 
@@ -514,7 +554,7 @@ label #btn, label #cancel{
     #top_area_about{
     padding-right: 30px;
     grid-template-columns: 1fr 1000px 1fr;
-    height: 60vh;
+    height: 100vh;
 }
     
     #top_area_blog{
@@ -593,14 +633,14 @@ footer{
     
 #services_area{
     grid-template-columns: 1fr 900px 1fr;
-    height: 20vh;
+    height: 40vh;
     }
     
 #top_area_services{
     
     grid-template-columns:1fr 900px 1fr;
     padding-right: 50px;
-    height: 160vh;
+    height: 250vh;
     
 
 
@@ -609,7 +649,7 @@ footer{
     #top_area_about{
     padding-right: 30px;
     grid-template-columns: 1fr 900px 1fr;
-    height: 60vh;
+    height: 100vh;
 }
     
     #top_area_blog{
@@ -665,19 +705,13 @@ footer{
         float: right;
         cursor: pointer;
         visibility: visible;
-        padding-left: 450px;
+        padding-left: 650px;
         
         
     }
     
     label #btn{
-        display: block;
-        padding-left: 450px;
-       
-        
-       
-       
-       
+        display: block;   
         
     }
 
@@ -845,12 +879,12 @@ input{
 
 /*--------------------------------------------------------------------------services-mobile---------------------------------------------------------------------*/
 #top_area_services{
-    background-image: url("tree2.jpg");
+    background-image: url("img/tree2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     grid-column: 1/4;
-    height: 350vh;
+    height: 440vh;
     grid-template-columns:1fr 350px 1fr;
 }
 #top_services{
@@ -899,12 +933,12 @@ input{
 /*--------------------------------------------------------------------------about-mobile---------------------------------------------------------------------*/
 
 #top_area_about{
-    background-image: url("typing.jpg");
+    background-image: url("img/typing.jpg");
     background-size: cover;
     grid-column: 1/4;
     padding-left: 10px;
     padding-right: 0;
-    height: 110vh;
+    height: 130vh;
     grid-template-columns: 1fr 250px 1fr;
 }
 #top_about{
@@ -919,7 +953,7 @@ input{
 
 
 #top_about .border p{
-    border: 3px solid white;
+    border: 3px solid black;
     padding: 5px;
 }
     
@@ -931,7 +965,7 @@ input{
     
 /*--------------------------------------------------------------------------home-mobile---------------------------------------------------------------------*/
 #top_area{
-    background-image: url("tree1\ copy.jpg");
+    background-image: url("img/tree1\ copy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1049,7 +1083,7 @@ input{
 #process_area{
     padding-right: 0;
     grid-column: 1/4;
-    height: 80vh;
+    height: 100vh;
     background-color: #49B3FD;
     grid-template-columns: 1fr 500px 1fr;
     text-align: center;
@@ -1069,6 +1103,10 @@ input{
     
 }
 #services_area{
+    background-image: url("img/tree2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-right: 100px;
 
     grid-column: 1/4;
@@ -1076,10 +1114,19 @@ input{
     grid-template-columns: 1fr 500px 1fr;
     }
 
+#serv {
+    grid-column-start: 1;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
     
-    
+}
 
-
+#services p {
+    grid-column-start: 1;
+    display: flex;
+    justify-content: center;
+}
 
 
 /*--------------------------------------------------------------------------footer-mobile---------------------------------------------------------------------*/
@@ -1108,7 +1155,71 @@ footer{
 
 
 /*--------------------------------------------------------------------------600px---------------------------------------------------------------------*/
+@media only screen and (max-width: 850px) {
 
+
+    #check{
+        display: none;
+       
+    
+    }
+    
+
+    label #btn, label #cancel{
+        padding-top: 5px;
+        font-size: 30px;
+        color: black;
+        float: right;
+        cursor: pointer;
+        visibility: visible;
+        padding-left: 500px;
+        
+        
+    }
+
+    @media only screen and (max-width: 700px) {
+
+
+        #check{
+            display: none;
+           
+        
+        }
+        
+    
+        label #btn, label #cancel{
+            padding-top: 5px;
+            font-size: 30px;
+            color: black;
+            float: right;
+            cursor: pointer;
+            visibility: visible;
+            padding-left: 400px;
+            
+            
+        }
+
+        @media only screen and (max-width: 650px) {
+
+
+            #check{
+                display: none;
+               
+            
+            }
+            
+        
+            label #btn, label #cancel{
+                padding-top: 5px;
+                font-size: 30px;
+                color: black;
+                float: right;
+                cursor: pointer;
+                visibility: visible;
+                padding-left: 330px;
+                
+                
+            }
 
 @media only screen and (max-width: 600px) {
    #footer_area{
@@ -1117,15 +1228,11 @@ footer{
     
     label #btn, label #cancel{
       
-        padding-left: 60px;
+        padding-left: 300px;
         
         
     }
     
-     label #btn{
-        padding-left: 60px;
-        
-    }
     #wrapper{
         grid-template-columns: 1fr 300px 1fr; 
     }
@@ -1203,8 +1310,7 @@ footer{
 
 /*--------------------------------------------------------------------------450px---------------------------------------------------------------------*/
 
-
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
     
     br {
         display: none;
@@ -1212,15 +1318,11 @@ footer{
     
     label #btn, label #cancel{
       
-        padding-left: 90px;
+        padding-left: 250px;
         
         
     }
     
-     label #btn{
-        padding-left: 90px;
-        
-    }
     #wrapper{
         grid-template-columns: 1fr 300px 1fr; 
     }
@@ -1249,7 +1351,96 @@ footer{
     }
     
     #top_area_services{
-    height: 560vh;
+    height: 460vh;
+    grid-template-columns:1fr 300px 1fr;
+        
+    }
+    
+#top_area_about{
+    padding-left: 10px;
+    padding-right: 0;
+    height: 140vh;
+    grid-template-columns: 1fr 300px 1fr;
+}
+    
+    #top_area_blog h1 {
+        font-size: 35px;
+        
+        padding: unset;
+        padding-top: 10px;
+        padding-right: 15px; 
+        
+}
+    
+    #contact_area{
+    padding-left: 30px;
+    grid-column: 1/4;
+    height: 100vh;
+    grid-template-columns: 1fr 300px 1fr;
+    
+}
+    
+    #top_area_blog{
+         grid-template-columns: 1fr 300px 1fr;
+        text-align: unset;
+    }
+
+
+    
+   #footer_area{
+    height: 7vh;
+}
+#footer_area2{
+    height: 7vh;
+
+
+    
+    
+    
+}
+
+@media only screen and (max-width: 500px) {
+    
+    br {
+        display: none;
+    }
+    
+    label #btn, label #cancel{
+      
+        padding-left: 200px;
+        
+        
+    }
+    
+    #wrapper{
+        grid-template-columns: 1fr 300px 1fr; 
+    }
+    #top_area{
+    height: 90vh;
+    grid-template-columns: 1fr 300px 1fr;
+}
+    
+    
+
+    #why_area{
+    height: 170vh;
+    grid-template-columns: 1fr 300px 1fr;
+    
+}
+    #process_area{
+    height: 130vh;
+    grid-template-columns: 1fr 300px 1fr;
+}
+    
+    #services_area{
+    padding-right: 30px;
+
+    height: 40vh;
+    grid-template-columns: 1fr 300px 1fr;
+    }
+    
+    #top_area_services{
+    height: 460vh;
     grid-template-columns:1fr 300px 1fr;
         
     }
@@ -1299,7 +1490,14 @@ footer{
 
 /*--------------------------------------------------------------------------380px---------------------------------------------------------------------*/
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 450px) {
+    
+    label #btn, label #cancel{
+      
+        padding-left: 120px;
+        
+        
+    }
     
     
     #top_area{
@@ -1328,7 +1526,7 @@ footer{
     }
     
     #top_area_services{
-    height: 650vh;
+    height: 450vh;
         
     }
     
@@ -1390,7 +1588,7 @@ footer{
     #top_area_services{
         grid-template-columns: 1fr 320px 1fr;
         padding:unset;
-        height: 770vh;
+        height: 470vh;
         
     }
     
@@ -1431,24 +1629,7 @@ footer{
     }
     
     
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
