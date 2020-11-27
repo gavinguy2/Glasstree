@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Source Sans Pro;
-    src: url('SourceSansPro-Regular.otf');
+    src: url(SourceSansPro-Regular.ttf)
 }
 
 *{
@@ -59,7 +59,7 @@ nav ul li a {
 
 
 #logo {
-    align-self: center;
+    
     font-size: 30px;
 }
 
@@ -83,10 +83,10 @@ nav ul li {
     background-size: cover;
     background-position: center;
     grid-column: 1/5;
-    height: 40vh;
     background-color: #49B3FD;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
+    padding-bottom: 250px;
 }
 #top{
     
@@ -130,10 +130,10 @@ nav ul li {
 }
 #why_area{
     grid-column: 1/5;
-    height: 80vh;
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
+    padding-bottom: 100px;
     
 }
 
@@ -159,11 +159,10 @@ nav ul li {
 #process_area{
     
     grid-column: 1/5;
-    height: 40vh;
+    padding-bottom: 50px;
     background-color: #49B3FD;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
-    height: 40vh;
 }
 
 #process{
@@ -204,17 +203,17 @@ nav ul li {
 
 #footer_area{
     grid-column: 1/5;
-    height: 5vh;
+    padding-bottom: 15px;
     background-color: #49B3FD;
     display: grid;
-    grid-template-columns: 1fr 600px 600px 1fr;
+    grid-template-columns: 1fr 800px 800px 1fr;
 }
 #footer_area2{
     grid-column: 1/5;
-    height: 5vh;
+    padding-bottom: 15px;
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 600px 600px 1fr;
+    grid-template-columns: 1fr 800px 800px 1fr;
 }
 footer{
     grid-column: 2/4;
@@ -228,8 +227,8 @@ footer{
     background-size: cover;
     background-position: center;
     grid-column: 1/5;
-    height: 30vh;
     background-color: white;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
 }
@@ -243,6 +242,10 @@ footer{
     grid-template-rows: auto;
     
 
+}
+
+#services p {
+    padding-bottom: 50px;
 }
 
 #services div a {
@@ -259,10 +262,10 @@ footer{
 
 #contact_area{
     grid-column: 1/5;
-    height: 50vh;
     background-color: #49B3FD;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
+    padding-bottom: 300px;
     
 }
 #top_contact{
@@ -307,7 +310,7 @@ footer{
 }
 
 #name_id, #email_id, #phone_id, #message_id{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 fieldset{
@@ -326,6 +329,8 @@ fieldset{
 
 
 }
+
+
 
 
 
@@ -366,10 +371,10 @@ fieldset{
     background-size: cover;
     background-position: bottom;
     grid-column: 1/5;
-    height: 100vh;
     background-color: #49B3FD;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
+    padding-bottom: 200px;
 }
 
 
@@ -393,10 +398,10 @@ fieldset{
 
 #top_area_blog{
     grid-column: 1/5;
-    height: 50vh;
     background-color: #49B3FD;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
+    padding-bottom: 400px;
 }
 #top_blog{
     
@@ -421,10 +426,10 @@ fieldset{
     background-size: cover;
     background-position: center;
     grid-column: 1/5;
-    height: 240vh;
     background-color: white;
     display: grid;
     grid-template-columns:1fr 600px 600px 1fr;
+    padding-bottom: 100px;
 }
 #top_services{
     padding-left: 100px;
@@ -474,33 +479,6 @@ label #btn, label #cancel{
 }
 
 
-/*--------------------------------------------------------------------------2000px---------------------------------------------------------------------*/
-
-@media only screen and (max-width: 2000px) {
-
-    #check{
-        display: none;
-    }
-
-
-#top_area{
-    height: 50vh;
-}
-
-#process_area{
-  height: 50vh;   
-}
-#top_area_services{
-padding-left: 150px;
-height: 240vh;   
-}
-
-#top_area_about{
-     height: 100vh;
-}
-#services_area{
-    height: 40vh;
-}
 
 
 
@@ -536,7 +514,6 @@ height: 240vh;
     }
         
     #top_area{
-    height: 60vh;
     grid-template-columns: 1fr 1000px 1fr;
         }
 
@@ -554,15 +531,13 @@ height: 240vh;
 }
     
 #services_area{
-    height: 40vh;
     grid-template-columns: 1fr 1000px 1fr;
     }
     
 #top_area_services{
     
     grid-template-columns:1fr 1000px 1fr;
-    padding-right: 50px;
-    height: 240vh;
+    
     
 
 
@@ -571,7 +546,6 @@ height: 240vh;
     #top_area_about{
     padding-right: 30px;
     grid-template-columns: 1fr 1000px 1fr;
-    height: 100vh;
 }
     
     #top_area_blog{
@@ -587,16 +561,13 @@ height: 240vh;
 }
     
     #footer_area{
-        height: 6vh;
  
     grid-template-columns: 1fr 1000px 1fr;
 }
 #footer_area2{
-     height: 6vh;
     grid-template-columns: 1fr 1000px 1fr;
 }
 footer{
-    padding-left: 15px;
    
     
 }
@@ -605,97 +576,9 @@ footer{
 
 
 
-/*--------------------------------------------------------------------------1200px---------------------------------------------------------------------*/
 
 
-@media only screen and (max-width: 1200px) {
 
-    #check{
-        display: none;
-    }
-    
-    #wrapper{
-    grid-template-columns: 1fr 900px 1fr;
-    grid-template-rows: auto;   
-        
-}
-    
-    #nav_area {
-        
-   
-    grid-template-columns: 1fr 900px 1fr;
-    }
-    
-    nav{
-        padding-right: 20px;
-    }
-        
-    #top_area{
-    
-    grid-template-columns: 1fr 900px 1fr;
-        }
-
-
-#why_area{
- 
-    grid-template-columns: 1fr 900px 1fr;
-    
-}
-
-#process_area{
-    padding-right: 80px;
-   
-    grid-template-columns: 1fr 900px 1fr;
-}
-    
-#services_area{
-    grid-template-columns: 1fr 900px 1fr;
-    height: 40vh;
-    }
-    
-#top_area_services{
-    
-    grid-template-columns:1fr 900px 1fr;
-    padding-right: 50px;
-    height: 250vh;
-    
-
-
-    }
-    
-    #top_area_about{
-    padding-right: 30px;
-    grid-template-columns: 1fr 900px 1fr;
-    height: 100vh;
-}
-    
-    #top_area_blog{
-   
-    grid-template-columns: 1fr 900px 1fr;
-}
-    
-    #contact_area{
-  
-    grid-template-columns: 1fr 900px 1fr;
-    padding-right: 90px;
-    
-}
-    
-    #footer_area{
-        height: 4vh;
- 
-    grid-template-columns: 1fr 900px 1fr;
-}
-#footer_area2{
-     height: 4vh;
-    grid-template-columns: 1fr 900px 1fr;
-}
-footer{
-    padding-left: 15px;
-   
-    
-}
-} 
 
 
 
@@ -722,8 +605,6 @@ footer{
         float: right;
         cursor: pointer;
         visibility: visible;
-        padding-left: 650px;
-        
         
     }
     
@@ -747,7 +628,7 @@ footer{
         transition: all .5s;
 
     }
-
+    
     nav ul li{
         display: block;
         margin: 50px 0;
@@ -757,6 +638,8 @@ footer{
     nav ul li a{
         font-size: 20px;
     }
+
+    
 
     #check:checked ~ ul{
         left: 0;
@@ -776,18 +659,18 @@ footer{
     #nav_area {
     padding-top: 5px;
     padding-bottom: 5px;
-    display: grid;
+    display: block;
     grid-template-columns: 1fr 500px 1fr;
     background-color: white;
     grid-column: 1 / 4;
     grid-row: 1;
     z-index: 1;
 }
+    nav{
+    }
 
 
-nav {
-    grid-column: 1;
-}
+
 
 
 h1{
@@ -800,9 +683,8 @@ h2{
 
 
 #logo {
-    grid-column-start: 1;
-    padding-left: 15px;
-    align-self: center;
+    padding-left: 10px;
+   
     font-size: 30px;
 }
 /*--------------------------------------------------------------------------contact-mobile---------------------------------------------------------------------*/
@@ -811,7 +693,6 @@ h2{
     #contact_area{
     padding-right: 30px;
     grid-column: 1/4;
-    height: 75vh;
     background-color: #49B3FD;
     display: grid;
     grid-template-columns: 1fr 250px 1fr;
@@ -844,6 +725,7 @@ h2{
     padding-right: 30px;
     background-color: white;
     border-color: transparent;
+    font-size: 20px;
 }
 
 #contact_right div a {
@@ -868,11 +750,10 @@ h2{
 /*--------------------------------------------------------------------------blog-mobile---------------------------------------------------------------------*/
 #top_area_blog{
     grid-column: 1/4;
-    height: 80vh;
-    text-align: center;
     grid-template-columns: 1fr 500px 1fr;
 }
 #top_blog{
+    text-align: center;
    
     
     color: white;
@@ -897,13 +778,14 @@ h2{
     background-image: url("img/tree2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    
+    
     grid-column: 1/4;
-    height: 440vh;
     grid-template-columns:1fr 350px 1fr;
+    
 }
 #top_services{
-    padding-left: 60px;
+    padding-left: 30px;
     grid-column: 2;
     
     grid-template-columns: 1fr;
@@ -953,7 +835,6 @@ h2{
     grid-column: 1/4;
     padding-left: 10px;
     padding-right: 0;
-    height: 130vh;
     grid-template-columns: 1fr 250px 1fr;
 }
 #top_about{
@@ -985,7 +866,6 @@ h2{
     background-size: cover;
     background-position: center;
     grid-column: 1/4;
-    height: 80vh;
     grid-template-columns: 1fr 500px 1fr;
 }
 
@@ -1074,10 +954,9 @@ h2{
 
 #why_area{
     grid-column: 1/4;
-    height: 140vh;
     grid-template-columns: 1fr 500px 1fr;
     
-}
+}   
 
 #why_choose{
     grid-column: 1/4;
@@ -1098,7 +977,6 @@ h2{
 #process_area{
     padding-right: 0;
     grid-column: 1/4;
-    height: 100vh;
     background-color: #49B3FD;
     grid-template-columns: 1fr 500px 1fr;
     text-align: center;
@@ -1111,6 +989,7 @@ h2{
     grid-template-columns: 1fr  ;
     grid-template-rows:auto;
     
+    
 }
 #process h1{
     padding-left: 1px;
@@ -1121,39 +1000,35 @@ h2{
     background-image: url("img/tree2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    padding-right: 100px;
-
+   
     grid-column: 1/4;
-    height: 35vh;
     grid-template-columns: 1fr 500px 1fr;
     }
-
-#serv {
-    grid-column-start: 1;
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
+    #services{
+    grid-column: 2;
     
-}
+        
+        
+    }
+    
+    #process_right{
+        padding: 0;
+    }
 
-#services p {
-    grid-column-start: 1;
-    display: flex;
-    justify-content: center;
-}
+
+
+
+
 
 
 /*--------------------------------------------------------------------------footer-mobile---------------------------------------------------------------------*/
 
 #footer_area{
     grid-column: 1/4;
-    height: 5vh;
     grid-template-columns: 1fr 250px 1fr;
 }
 #footer_area2{
     grid-column: 1/4;
-    height: 5vh;
     grid-template-columns: 1fr 250px 1fr;
 }
 footer{
@@ -1169,127 +1044,81 @@ footer{
 }
 
 
+
+
 /*--------------------------------------------------------------------------600px---------------------------------------------------------------------*/
-@media only screen and (max-width: 850px) {
 
-
-    #check{
-        display: none;
-       
-    
-    }
-    
-
-    label #btn, label #cancel{
-        padding-top: 5px;
-        font-size: 30px;
-        color: black;
-        float: right;
-        cursor: pointer;
-        visibility: visible;
-        padding-left: 500px;
-        
-        
-    }
-
-    @media only screen and (max-width: 700px) {
-
-
-        #check{
-            display: none;
-           
-        
-        }
-        
-    
-        label #btn, label #cancel{
-            padding-top: 5px;
-            font-size: 30px;
-            color: black;
-            float: right;
-            cursor: pointer;
-            visibility: visible;
-            padding-left: 400px;
-            
-            
-        }
-
-        @media only screen and (max-width: 650px) {
-
-
-            #check{
-                display: none;
-               
-            
-            }
-            
-        
-            label #btn, label #cancel{
-                padding-top: 5px;
-                font-size: 30px;
-                color: black;
-                float: right;
-                cursor: pointer;
-                visibility: visible;
-                padding-left: 330px;
-                
-                
-            }
 
 @media only screen and (max-width: 600px) {
+   
+    
+    #nav_area{
+         grid-template-columns: unset; 
+        width: 100%;
+    }
    #footer_area{
-        height: 7vh;
+       
     }
     
-    label #btn, label #cancel{
-      
-        padding-left: 300px;
-        
-        
-    }
+   
+   
+    
+
     
     #wrapper{
         grid-template-columns: 1fr 300px 1fr; 
     }
     #top_area{
-    height: 90vh;
-    grid-template-columns: 1fr 300px 1fr;
+    grid-template-columns: unset;
+        width: 100%;
 }
     
     
 
     #why_area{
-    height: 170vh;
-    grid-template-columns: 1fr 300px 1fr;
+     grid-template-columns: unset;
+        width: 100%;
     
 }
     #process_area{
-    padding-left: 15px;
-    height: 130vh;
-    text-align: unset;
-    grid-template-columns: 1fr 300px 1fr;
+     width: 100%;
+        grid-template-columns: unset;
+        display: block;
+        padding: 0;
+       
+        
+        
 }
+    #process_left, #process_right{
+        padding: 0;
+    }
     
     #services_area{
+        width: 100%;
+     grid-template-columns: unset;
+        display: block;
         
-    padding-right: 30px;
-
-    height: 40vh;
-    grid-template-columns: 1fr 300px 1fr;
     }
     
-    #top_area_services{
-    height: 510vh;
-    grid-template-columns:1fr 300px 1fr;
+    #services{
         
     }
+    
+    
+    
+    
+
     
 #top_area_about{
-    padding-left: 10px;
-    padding-right: 0;
-    height: 120vh;
-    grid-template-columns: 1fr 300px 1fr;
+         
+        width: 100%;
+    padding-left: 0;
+    
 }
+    #top_about{
+        text-align: center;
+        padding-left: 0;
+    }
     
     #top_area_blog h1 {
         font-size: 35px;
@@ -1299,387 +1128,64 @@ footer{
         padding-right: 15px; 
         
 }
+    #top_area_blog br{
+        display: none;
+    }
     
     #contact_area{
-    padding: unset;
-    padding-left: 30px;
-    grid-column: 1/4;
-    height: 100vh;
-    grid-template-columns: 1fr 300px 1fr;
+        width: 100%;   
+        padding: 0;
+        padding-bottom: 120px;
     
 }
+    #top_contact{
+        padding-top: 0;
+       
+    }
     
     #top_area_blog{
-        padding-left:20px;
-         grid-template-columns: 1fr 300px 1fr;
+         grid-template-columns: unset;
+        width: 100%;
+        text-align: center;
+       
+        
+    }
+    #top_area_services{
+         
+        width: 100%;
+       
+        
+    }
+    
+    #top_services{
+        text-align: center;
+        padding-left: 0;
     }
     
       #top_area_blog #top_left p{
          font-size: 23px;
     }
-
     
-    
-    
-}
-
-/*--------------------------------------------------------------------------550px---------------------------------------------------------------------*/
-
-@media only screen and (max-width: 550px) {
-    
-
-     #top_services br {
-        display: none;
-    }
-
-
-     #top_area_about br {
-        display: none;
-    }
-
-
-     #top_blog br {
-        display: none;
-    }
-
-
-     #contact_areabr {
-        display: none;
-    }
-   
-    
-    label #btn, label #cancel{
-      
-        padding-left: 250px;
-        
-        
-    }
-    
-    #wrapper{
-        grid-template-columns: 1fr 300px 1fr; 
-    }
-    #top_area{
-    height: 90vh;
-    grid-template-columns: 1fr 300px 1fr;
-}
-    
-    
-
-    #why_area{
-    height: 170vh;
-    grid-template-columns: 1fr 300px 1fr;
-    
-}
-    #process_area{
-    height: 130vh;
-    grid-template-columns: 1fr 300px 1fr;
-}
-    
-    #services_area{
-    padding-right: 30px;
-
-    height: 40vh;
-    grid-template-columns: 1fr 300px 1fr;
-    }
-    
-    #top_area_services{
-    height: 460vh;
-    grid-template-columns:1fr 300px 1fr;
-        
-    }
-    
-#top_area_about{
-    padding-left: 10px;
-    padding-right: 0;
-    height: 140vh;
-    grid-template-columns: 1fr 300px 1fr;
-}
-    
-    #top_area_blog h1 {
-        font-size: 35px;
-        
-        padding: unset;
-        padding-top: 10px;
-        padding-right: 15px; 
-        
-}
-    
-    #contact_area{
-    padding-left: 30px;
-    grid-column: 1/4;
-    height: 100vh;
-    grid-template-columns: 1fr 300px 1fr;
+      #footer_area{
+     grid-template-columns: unset;
+        width: 100%;
     
 }
     
-    #top_area_blog{
-         grid-template-columns: 1fr 300px 1fr;
-        text-align: unset;
-    }
-
-
-    
-   #footer_area{
-    height: 7vh;
-}
 #footer_area2{
-    height: 7vh;
-
+     grid-template-columns: unset;
+        width: 100%;
+    
+}
 
     
     
     
 }
 
-@media only screen and (max-width: 500px) {
-    
-   
-    
-    label #btn, label #cancel{
-      
-        padding-left: 200px;
-        
-        
-    }
-    
-    #wrapper{
-        grid-template-columns: 1fr 300px 1fr; 
-    }
-    #top_area{
-    height: 90vh;
-    grid-template-columns: 1fr 300px 1fr;
-}
-    
-    
-
-    #why_area{
-    height: 170vh;
-    grid-template-columns: 1fr 300px 1fr;
-    
-}
-    #process_area{
-    height: 130vh;
-    grid-template-columns: 1fr 300px 1fr;
-}
-    
-    #services_area{
-    padding-right: 30px;
-
-    height: 40vh;
-    grid-template-columns: 1fr 300px 1fr;
-    }
-    
-    #top_area_services{
-    height: 460vh;
-    grid-template-columns:1fr 300px 1fr;
-        
-    }
-    
-#top_area_about{
-    padding-left: 10px;
-    padding-right: 0;
-    height: 140vh;
-    grid-template-columns: 1fr 300px 1fr;
-}
-    
-    #top_area_blog h1 {
-        font-size: 35px;
-        
-        padding: unset;
-        padding-top: 10px;
-        padding-right: 15px; 
-        
-}
-    
-    #contact_area{
-    padding-left: 30px;
-    grid-column: 1/4;
-    height: 100vh;
-    grid-template-columns: 1fr 300px 1fr;
-    
-}
-    
-    #top_area_blog{
-         grid-template-columns: 1fr 300px 1fr;
-        text-align: unset;
-    }
 
 
-    
-   #footer_area{
-    height: 7vh;
-}
-#footer_area2{
-    height: 7vh;
 
-
-    
-    
-    
-}
-
-/*--------------------------------------------------------------------------450px---------------------------------------------------------------------*/
-
-@media only screen and (max-width: 450px) {
-    
-    label #btn, label #cancel{
-      
-        padding-left: 120px;
-        
-        
-    }
-    
-    
-    #top_area{
-    height: 110vh;
-}
-    
-    #contact_area{
-    padding-left: px;
-  
-    
-}
-    
-    
-
-    #why_area{
-    height: 190vh;
-    
-}
-    #process_area{
-    height: 150vh;
-}
-    
-    #services_area{
-
-    height: 40vh;
-    }
-    
-    #top_area_services{
-    height: 490vh;
-        
-    }
-    
-#top_area_about{
-   
-    height: 150vh;
-}
-    
-
- }
-
-
- /*--------------------------------------------------------------------------400px---------------------------------------------------------------------*/
-
-@media only screen and (max-width: 400px) {
-    
-    
-    
-    
-
-
-    
-    #top_area_services{
-    height: 580vh;
-        
-    }
-    
-
-
- }
-
-
- /*--------------------------------------------------------------------------330px---------------------------------------------------------------------*/
-
-
-@media only screen and (max-width: 330px) {
-    
-        label #btn, label #cancel{
-      
-        padding-left: 20px;
-        
-        
-    }
-    
-     label #btn{
-        padding-left: 20px;
-    }
-    #wrapper{
-        grid-template-columns: 1fr 330px 1fr;
-    }
-    
-       #nav_area{
-        grid-template-columns: 1fr 330px 1fr;
-    }
-    
-    
-    #top_area{
-         grid-template-columns: 1fr 322px 1fr;
-    height: 120vh;
-}
-    
-    
-
-    #why_area{
-         grid-template-columns: 1fr 320px 1fr;
-    height: 220vh;
-    
-}
-    #process_area{
-         grid-template-columns: 1fr 320px 1fr;
-    height: 170vh;
-}
-    
-    #services_area{
- grid-template-columns: 1fr 320px 1fr;
-    height: 40vh;
-    }
-    
-    #top_area_services{
-        grid-template-columns: 1fr 320px 1fr;
-        padding:unset;
-        height: 700vh;
-        
-    }
-    
-    #top_services{
-        padding-right: 50px;
-    }
-#top_area_about{
-    text-align: center;
-    padding: unset;
-    grid-template-columns: 1fr 320px 1fr;
-    height: 120vh;
-}
-    
-#top_area_about p{
-    font-size: 15px
-}
-    
-    
-    #nav_area{
-         grid-template-columns: 1fr 330px 1fr;
-    }
-    
-    #top_area_blog{
-        
-        padding: unset;
-        padding-left: 25px;
-         grid-template-columns: 1fr 300px 1fr;
-   
-    
-
-    }
-    
-    #contact_area{
-       
-         grid-template-columns: 1fr 320px 1fr;
-        height: 110vh;
-        
-    }
-    
-    
-}
 
 
 
