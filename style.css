@@ -87,6 +87,7 @@ nav ul li {
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
     padding-bottom: 250px;
+    padding-top: 40px;
 }
 #top{
     
@@ -133,12 +134,12 @@ nav ul li {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     
 }
 
 #why_choose{
-    padding-top: 20px;
+    padding-top: 40px;
     grid-column: 2/4;
     text-align: center;
     display: grid;
@@ -160,6 +161,7 @@ nav ul li {
     
     grid-column: 1/5;
     padding-bottom: 50px;
+    padding-top: 35px;
     background-color: #49B3FD;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
@@ -228,7 +230,8 @@ footer{
     background-position: center;
     grid-column: 1/5;
     background-color: white;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr 600px 600px 1fr;
 }
@@ -476,6 +479,17 @@ fieldset{
 
 label #btn, label #cancel{
     visibility: hidden;
+}
+
+#top_services #top_right .border {
+    padding-right: 200px;
+}
+
+#top_services #top_left{
+    padding-top: 60px;
+}
+#top_services #top_right{
+    padding-top: 90px;
 }
 
 
@@ -825,6 +839,18 @@ h2{
     display: flex;
     justify-content: center;
 }
+
+#top_services #top_right .border {
+    padding-right: 0px;
+}
+
+#top_services #top_left{
+    padding-top: 0px;
+}
+#top_services #top_right{
+    padding-top: 0px;
+}
+
 
 
 /*--------------------------------------------------------------------------about-mobile---------------------------------------------------------------------*/
