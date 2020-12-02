@@ -8,12 +8,12 @@
                 <div id="top_left">
                 <h1 id="h1_1">Services</h1>
                 <div class="icons">
-                <img src="img/web-design.svg" height="90px">
+                <img src="img/web-design.svg" height="90" alt="glasstreemarketing">
                 </div>
                 <h2 id="h2center">Web Design</h2>
                     <p>We build websites designed to<br> produce results. We believe your<br> website is the foundation of your<br> digital marketing plan.</p>
                     <div class="icons">
-                        <img src="img/facebook.svg" height="90px">
+                        <img src="img/facebook.svg" height="90" alt="glasstreemarketing">
                     </div>
                     <h2 id="h2center">Facebook Ads</h2>
                     <p>You can generate more leads,<br> sales, and conversions through <br>targeted social media advertising. <br>We get your business in front of<br> your potential customers by <br>targeting consumers by age,<br> gender, interests, and previous <br>interactions with your company</p>
@@ -54,12 +54,12 @@
                     </div>
                 <div id="top_right">
                     <div class="icons">
-                        <img src="img/settings-2.svg" height="90px">
+                        <img src="img/settings-2.svg" height="90" alt="glasstreemarketing">
                     </div>
                 <h2 id="h2center">SEO</h2>
                 <p>The process consists of finding <br>quality keywords, Create relevant <br>content for those keywords, build<br> backlinks, optimize.<p>
                     <div class="icons">
-                        <img src="img/social-media.svg" height="90px">
+                        <img src="img/social-media.svg" height="90" alt="glasstreemarketing">
                     </div>
                 <h2 id="h2center">Social Media</h2>
                 <p>Focus on long-term growth with<br> organic social media.<br> We can: develop engaging<br>content, post your content, <br>manage your accounts, craft your <br>strategy.</p>
@@ -80,7 +80,7 @@
                     </p>
                 </div>
                 <div class="icons">
-                    <img src="img/video-camera.svg" height="90px">
+                    <img src="img/video-camera.svg" height="90" alt="glasstreemarketing">
                 </div>
                 <h2 id="h2center">Content Creation</h2>
                     <p>We help you convert customers<br> through Google Adwords.</p>
